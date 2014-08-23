@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 8b86314628ea4451b95bdf0e08b12d39
+=======
+guid: 39de0ea7a3c91432fadeb6f2c6e68e80
+>>>>>>> feature/chat_display
 folderAsset: yes
 DefaultImporter:
   userData: 
