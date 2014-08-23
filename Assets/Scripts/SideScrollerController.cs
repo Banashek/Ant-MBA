@@ -4,6 +4,8 @@ using System.Collections;
 public class SideScrollerController : MonoBehaviour {
 	
 	public float maxSpeed = 10f;
+	bool facingRight = true;
+	Animator anim;
 	
 	bool grounded = false;
 	public Transform groundCheck;
@@ -15,39 +17,59 @@ public class SideScrollerController : MonoBehaviour {
 	public Vector3 playerResetPoint;
 	public int jumpButton; 
 	
-	void Awake(){
+	void Awake()
+	{
 	}
 	
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
+		anim = GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate () {
-		
+	void FixedUpdate () 
+	{	
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, isGround);
 		float move = Input.GetAxis ("Horizontal");
+
+		anim.SetFloat ("Speed", Mathf.Abs (move));
 		
 		rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
+
+		if (move > 0 && !facingRight) 
+				Flip ();
+		else if (move < 0 && facingRight)
+				Flip ();
+			
 	}
 	
-	void Update() {
-		
+	void Update() 
+	{	
 		if(grounded && Input.GetKeyDown(KeyCode.Space))
 		{
 			rigidbody2D.AddForce(new Vector2(0, jumpForce));
 		}
 	}
+
+	void Flip() {
+		facingRight = !facingRight;
+		Vector3 theScale = transform.localScale;
+		theScale.x *= -1;
+		transform.localScale = theScale;
+	}
 	
 	
-	void OnCollisionEnter2D(Collision2D coll) {
+	void OnCollisionEnter2D(Collision2D coll) 
+	{
 		if (coll.gameObject.layer == 12) {
 			Debug.Log("Player touched hazard");
 			Dead ();
 		}
 	}
 	
-	void Dead(){
+	void Dead()
+	{
 		gameObject.transform.position = playerResetPoint;
 		//Application.LoadLevel (0);
 	}
