@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Chat_handler : MonoBehaviour {
+public class Hallway_Scene_Controller : MonoBehaviour {
 
+	private 
 	// Use this for initialization
 	void Start () {
 	
