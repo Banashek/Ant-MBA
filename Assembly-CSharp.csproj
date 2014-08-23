@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\Dialogue_controller.cs" />
      <Compile Include="Assets\Scripts\RingScript.cs" />
      <Compile Include="Assets\Scripts\SideScrollerController.cs" />
+     <Compile Include="Assets\Scripts\SideScrollerPlayerCameraFollow.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
