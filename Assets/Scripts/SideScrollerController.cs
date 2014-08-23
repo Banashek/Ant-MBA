@@ -41,8 +41,10 @@ public class SideScrollerController : MonoBehaviour {
 	
 	
 	void OnCollisionEnter2D(Collision2D coll) {
-		if (coll.gameObject.tag == "Bullet" || coll.gameObject.tag == "Saw")
+		if (coll.gameObject.layer == 12) {
+			Debug.Log("Player touched hazard");
 			Dead ();
+		}
 	}
 	
 	void Dead(){
