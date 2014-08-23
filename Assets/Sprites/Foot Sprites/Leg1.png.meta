@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: a7bb97a745efe43919f5365f0945c112
+=======
+guid: 5cbb2c2980ee44650a2735b0540d2bff
+>>>>>>> sideScrollAnimation
 TextureImporter:
   fileIDToRecycleName:
     21300000: Leg1
