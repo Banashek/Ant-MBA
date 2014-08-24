@@ -1,9 +1,13 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: af9768c1cf2454fefae68c88e43261fd
 =======
 guid: 2fb737f9dc9de4545a2a35dd78e6e144
 >>>>>>> sideScrollAnimation
+=======
+guid: a6cc5c8923bcf487b84b008e244266bb
+>>>>>>> feature/hallway_level
 folderAsset: yes
 DefaultImporter:
   userData: 

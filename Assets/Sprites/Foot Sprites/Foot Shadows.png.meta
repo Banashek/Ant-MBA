@@ -1,8 +1,19 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 41809d9b4a0ed45929eacb3bd442e564
 TextureImporter:
   fileIDToRecycleName:
     21300000: Foot Shadows
+=======
+guid: b5ecfa1e2f5184bf081620f2ef2d5bb3
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Foot Shadows
+    21300002: Foot Shadows_0
+    21300004: Foot Shadows_1
+    21300006: Foot Shadows_2
+    21300008: Foot Shadows_3
+>>>>>>> feature/hallway_level
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,6 +37,7 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
+<<<<<<< HEAD
     aniso: -1
     mipBias: -1
     wrapMode: -1
@@ -33,6 +45,15 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
+=======
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+>>>>>>> feature/hallway_level
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -43,6 +64,50 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
+<<<<<<< HEAD
     sprites: []
+=======
+    sprites:
+    - name: Foot Shadows_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Foot Shadows_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Foot Shadows_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Foot Shadows_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+>>>>>>> feature/hallway_level
   spritePackingTag: 
   userData: 

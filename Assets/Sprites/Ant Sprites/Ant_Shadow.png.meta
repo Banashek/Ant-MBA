@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 541f524db7e07427d947ea518bfbf927
+=======
+guid: f7173557857d441e5b23cbb832d6881a
+>>>>>>> feature/hallway_level
 TextureImporter:
   fileIDToRecycleName:
     21300000: Ant_Shadow

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: a3eaab8a9bbd045e3b5c1cc376651f21
+=======
+guid: 5bed3609614874366936502280d4bb00
+>>>>>>> feature/hallway_level
 TextureImporter:
   fileIDToRecycleName:
     21300000: Hallway

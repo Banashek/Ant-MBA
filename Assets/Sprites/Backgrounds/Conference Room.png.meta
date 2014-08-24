@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 4a7012d3ee5a44fdabd5d270c498216f
+=======
+guid: 32aeb1e8bbf714f2e96a847362d44143
+>>>>>>> feature/hallway_level
 TextureImporter:
   fileIDToRecycleName:
     21300000: Conference Room

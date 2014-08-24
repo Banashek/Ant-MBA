@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: a5c7778fa6fe6418eb4074d2da942ad6
+=======
+guid: 435ce00ad7cb443de9489bfd2ebfe5d3
+>>>>>>> feature/hallway_level
 folderAsset: yes
 DefaultImporter:
   userData: 

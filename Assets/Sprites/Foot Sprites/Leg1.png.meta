@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: a7bb97a745efe43919f5365f0945c112
+=======
+guid: 29328228d9d51477f8419786476cbc89
+>>>>>>> feature/hallway_level
 TextureImporter:
   fileIDToRecycleName:
     21300000: Leg1
