@@ -18,9 +18,18 @@ public class Foot_Stomp_Controller : MonoBehaviour {
 	private float distance_travelled = 0f;
 	private Vector3 last_stomp_location,start_location;
 	private bool stompings_begun = false;
+	private float mirror_scale = 1; //set to -1 when mirrored
+
+	private mirror_script mirror;
+
+	void Awake(){
+		mirror = GameObject.FindGameObjectWithTag ("mirror").GetComponent<mirror_script> ();
+	}
 
 
 	void Start () {
+		if(mirror.isMirrored)
+			mirror_scale = -1;
 		ant = GameObject.FindGameObjectWithTag ("Player").transform;
 		start_location = ant.position;
 		last_stomp_location = ant.position;
@@ -28,7 +37,9 @@ public class Foot_Stomp_Controller : MonoBehaviour {
 
 	IEnumerator Instantiate_Foot(Vector3 location){
 		yield return new WaitForSeconds (1);
-		Instantiate (foot, location, Quaternion.identity);
+		GameObject f = Instantiate (foot, location+(4*Vector3.up), Quaternion.identity) as GameObject;
+		foot_controller fc = f.GetComponent<foot_controller> ();
+		fc.SetShadowLocation (location);
 		yield return null;
 	}
 
@@ -36,15 +47,16 @@ public class Foot_Stomp_Controller : MonoBehaviour {
 		if(stompings_begun){
 			if (timer > wait_time) {
 				//stomp
-				Vector3 stomp_location = ant.position + new Vector3(Random.Range(0f,2f),Random.Range(-.5f,.25f),0);
+				Vector3 stomp_location = ant.position + new Vector3(mirror_scale*Random.Range(0f,2f),Random.Range(-.5f,.25f),0);
 				if(Vector3.Distance(stomp_location,last_stomp_location)<.5f)
 					stomp_location = ant.position + new Vector3(Random.Range(0f,2f),Random.Range(-.5f,0),0);
 				last_stomp_location = stomp_location;
 				Instantiate(foot_shadow,stomp_location,Quaternion.identity);
-				StartCoroutine(Instantiate_Foot(stomp_location+(2*Vector3.up)));
+				StartCoroutine(Instantiate_Foot(stomp_location));
+				//StartCoroutine(Instantiate_Foot(stomp_location+(4*Vector3.up)));
 				//Instantiate(foot,stomp_location+(2*Vector3.up),Quaternion.identity);
 				//reset timer
-				float distance_travelled = Vector3.Distance(ant.position,start_location);
+				float distance_travelled = Mathf.Abs(Vector3.Distance(ant.position,start_location));
 				if(distance_travelled>60){
 					stompings_begun=false;
 					seconds_before_the_pounding = 1000;

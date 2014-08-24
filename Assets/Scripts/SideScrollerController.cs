@@ -14,7 +14,7 @@ public class SideScrollerController : MonoBehaviour {
 	public float jumpForce = 500f;
 	public int playerNumber = 1;
 	public string playerInputName;
-	Vector3 playerResetPoint;
+	public Vector3 playerResetPoint;
 	public int jumpButton; 
 	
 	void Awake()
@@ -50,6 +50,7 @@ public class SideScrollerController : MonoBehaviour {
 		{
 			rigidbody2D.AddForce(new Vector2(0, jumpForce));
 		}
+
 	}
 
 	void Flip() {

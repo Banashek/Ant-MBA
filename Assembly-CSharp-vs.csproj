@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\Hallway\Foot_Stomp_Controller.cs" />
      <Compile Include="Assets\Scripts\Hallway\Top_down_ant_controller.cs" />
      <Compile Include="Assets\Scripts\Hallway\foot_controller.cs" />
+     <Compile Include="Assets\Scripts\Hallway\mirror_script.cs" />
      <Compile Include="Assets\Scripts\Hallway\shadow_controller.cs" />
      <Compile Include="Assets\Scripts\RingScript.cs" />
      <Compile Include="Assets\Scripts\SideScrollerController.cs" />
