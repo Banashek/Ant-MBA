@@ -23,13 +23,12 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-<<<<<<< HEAD
-																								GlobalSection(MonoDevelopProperties) = preSolution
+																										GlobalSection(MonoDevelopProperties) = preSolution
 =======
 																			GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> sideScrollAnimation
 =======
-																																	GlobalSection(MonoDevelopProperties) = preSolution
+																																GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> feature/hallway_level
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
