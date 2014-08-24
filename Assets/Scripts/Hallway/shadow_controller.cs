@@ -14,6 +14,7 @@ public class shadow_controller : MonoBehaviour {
 		shadow_animator = GetComponent<Animator> ();
 	}
 	void Start () {
+		transform.localScale = 2 * (Vector3.right + Vector3.up);
 		shadow_animator.SetBool ("stomp", true);
 	}
 

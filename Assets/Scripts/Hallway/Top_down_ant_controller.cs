@@ -3,11 +3,13 @@ using System.Collections;
 
 public class Top_down_ant_controller : MonoBehaviour {
 
-	public float speed = 1f;
+	public float speed = 2f;
 	private Animator ant_animator;
 	private Transform ant_transform;
+	private Vector3 starting_position;
 	// Use this for initialization
 	void Start () {
+		starting_position = transform.position;
 		ant_transform = transform;
 		ant_animator = transform.GetChild(0).GetComponent<Animator>(); //GetComponent<Animator> ();
 		//ant_transform.Rotate (Vector3.forward * 90,Space.World);
@@ -40,4 +42,15 @@ public class Top_down_ant_controller : MonoBehaviour {
 
 		ant_animator.SetBool("walking",walking);
 	}
+
+	void OnCollisionEnter2D(Collision2D col){
+		Debug.Log ("Collision");
+		if(col.gameObject.tag!="level"){
+			if(col.gameObject.tag=="end"){
+				//end level
+			}
+			transform.position = starting_position;
+		}
+	}
+
 }
