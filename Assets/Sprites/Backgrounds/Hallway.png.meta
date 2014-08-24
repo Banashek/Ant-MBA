@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: a3eaab8a9bbd045e3b5c1cc376651f21
-=======
-guid: 76ab186c050d44caca3504e81632aebf
->>>>>>> sideScrollAnimation
 TextureImporter:
   fileIDToRecycleName:
     21300000: Hallway

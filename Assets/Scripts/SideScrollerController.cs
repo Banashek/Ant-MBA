@@ -14,7 +14,7 @@ public class SideScrollerController : MonoBehaviour {
 	public float jumpForce = 500f;
 	public int playerNumber = 1;
 	public string playerInputName;
-	public Vector3 playerResetPoint;
+	Vector3 playerResetPoint;
 	public int jumpButton; 
 	
 	void Awake()
@@ -58,12 +58,18 @@ public class SideScrollerController : MonoBehaviour {
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
-	
-	
+
+	void OnTriggerEnter2D(Collider2D coll)
+	{
+		if (coll.gameObject.layer == 13) {
+			Debug.Log("Player touched checkpoint");
+			playerResetPoint = coll.transform.position;
+		}
+	}
+
 	void OnCollisionEnter2D(Collision2D coll) 
 	{
 		if (coll.gameObject.layer == 12) {
-			Debug.Log("Player touched hazard");
 			Dead ();
 		}
 	}
