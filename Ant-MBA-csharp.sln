@@ -1,9 +1,9 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-Project("{4487AFD1-3793-AB21-F2B0-5AC9060CBD64}") = "Ant-MBA", "Assembly-CSharp-firstpass-vs.csproj", "{C9E404BE-405D-8AAC-964A-09A8B54CE951}"
+Project("{D3CC98C8-5B56-F3FB-82E8-37FC5D033004}") = "ant-mba", "Assembly-CSharp-firstpass-vs.csproj", "{E43CBEC8-4C74-C007-2984-95A9148ED846}"
 EndProject
-Project("{4487AFD1-3793-AB21-F2B0-5AC9060CBD64}") = "Ant-MBA", "Assembly-CSharp-vs.csproj", "{D189ED4B-BD91-F120-AC63-007C2ABCFEFD}"
+Project("{D3CC98C8-5B56-F3FB-82E8-37FC5D033004}") = "ant-mba", "Assembly-CSharp-vs.csproj", "{7A83EB2C-32E5-8F2F-1C0F-8B8A9320F281}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,25 +11,24 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C9E404BE-405D-8AAC-964A-09A8B54CE951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C9E404BE-405D-8AAC-964A-09A8B54CE951}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C9E404BE-405D-8AAC-964A-09A8B54CE951}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C9E404BE-405D-8AAC-964A-09A8B54CE951}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D189ED4B-BD91-F120-AC63-007C2ABCFEFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D189ED4B-BD91-F120-AC63-007C2ABCFEFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D189ED4B-BD91-F120-AC63-007C2ABCFEFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D189ED4B-BD91-F120-AC63-007C2ABCFEFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E43CBEC8-4C74-C007-2984-95A9148ED846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E43CBEC8-4C74-C007-2984-95A9148ED846}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E43CBEC8-4C74-C007-2984-95A9148ED846}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E43CBEC8-4C74-C007-2984-95A9148ED846}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A83EB2C-32E5-8F2F-1C0F-8B8A9320F281}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A83EB2C-32E5-8F2F-1C0F-8B8A9320F281}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A83EB2C-32E5-8F2F-1C0F-8B8A9320F281}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A83EB2C-32E5-8F2F-1C0F-8B8A9320F281}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-<<<<<<< HEAD
-																								GlobalSection(MonoDevelopProperties) = preSolution
+																										GlobalSection(MonoDevelopProperties) = preSolution
 =======
 																			GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> sideScrollAnimation
 =======
-																																	GlobalSection(MonoDevelopProperties) = preSolution
+																																GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> feature/hallway_level
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
