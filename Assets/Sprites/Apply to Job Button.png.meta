@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: 6eac87a549a7347b1855eacd915dc929
+guid: a675dad389af74e0aad1abb522e8ec7f
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Level Barrier
+    21300000: Apply to Job Button
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0

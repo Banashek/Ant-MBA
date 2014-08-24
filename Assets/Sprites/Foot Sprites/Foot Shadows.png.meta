@@ -3,13 +3,10 @@ guid: 41809d9b4a0ed45929eacb3bd442e564
 TextureImporter:
   fileIDToRecycleName:
     21300000: Foot Shadows
-<<<<<<< HEAD
     21300002: Foot Shadows_0
     21300004: Foot Shadows_1
     21300006: Foot Shadows_2
     21300008: Foot Shadows_3
-=======
->>>>>>> ff08dfc6a338e64c4f8fe2b2767ca143fb5dd749
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -33,7 +30,6 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-<<<<<<< HEAD
     aniso: 1
     mipBias: -1
     wrapMode: 1
@@ -41,15 +37,6 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-=======
-    aniso: -1
-    mipBias: -1
-    wrapMode: -1
-  nPOTScale: 0
-  lightmap: 0
-  compressionQuality: 50
-  spriteMode: 1
->>>>>>> ff08dfc6a338e64c4f8fe2b2767ca143fb5dd749
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -60,7 +47,6 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-<<<<<<< HEAD
     sprites:
     - name: Foot Shadows_0
       rect:
@@ -102,8 +88,5 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-=======
-    sprites: []
->>>>>>> ff08dfc6a338e64c4f8fe2b2767ca143fb5dd749
   spritePackingTag: 
   userData: 
