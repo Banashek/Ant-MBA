@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 6eac87a549a7347b1855eacd915dc929
+=======
+guid: 55f3f4c983679419d97a7a5ec943c18f
+>>>>>>> ff08dfc6a338e64c4f8fe2b2767ca143fb5dd749
 TextureImporter:
   fileIDToRecycleName:
     21300000: Level Barrier
