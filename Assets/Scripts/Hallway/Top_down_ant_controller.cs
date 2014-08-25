@@ -64,12 +64,13 @@ public class Top_down_ant_controller : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D col){
 		Debug.Log ("Collision");
 		if(col.gameObject.tag!="level"){
+			Debug.Log (col.gameObject.tag);
 			if(col.gameObject.tag=="end"){
 				//end level
 				if(!mirror.isMirrored){
 					Application.LoadLevel("Behold_Printer");
 				}else
-					Debug.Log ("Load ending scene");
+					Application.LoadLevel("closing");
 			}else
 				transform.position = starting_position;
 		}
