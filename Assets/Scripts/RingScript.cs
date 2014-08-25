@@ -5,7 +5,7 @@ public class RingScript : MonoBehaviour {
 	void OnCollisionEnter2D (Collision2D coll)	{
 		if (coll.gameObject.name == "stupidant") {
 			Debug.Log("Player touched ring");
-			Application.LoadLevel("hallway 2");
+			Application.LoadLevel("Wheres That Ant");
 		}
 	}
 }

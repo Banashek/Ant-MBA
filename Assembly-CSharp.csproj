@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\Cutscenes\Cutscene_Controller.cs" />
      <Compile Include="Assets\Scripts\Cutscenes\Dialogue_controller.cs" />
      <Compile Include="Assets\Scripts\Cutscenes\Enter_Printer.cs" />
+     <Compile Include="Assets\Scripts\Cutscenes\Switch_Backgrounds.cs" />
      <Compile Include="Assets\Scripts\Hallway\Foot_Stomp_Controller.cs" />
      <Compile Include="Assets\Scripts\Hallway\Top_down_ant_controller.cs" />
      <Compile Include="Assets\Scripts\Hallway\foot_controller.cs" />
@@ -59,6 +60,7 @@
      <Compile Include="Assets\Scripts\RingScript.cs" />
      <Compile Include="Assets\Scripts\SideScrollerController.cs" />
      <Compile Include="Assets\Scripts\SideScrollerPlayerCameraFollow.cs" />
+     <Compile Include="Assets\Scripts\keyboard\Ant_Name.cs" />
      <Compile Include="Assets\Scripts\keyboard\key.cs" />
      <Compile Include="Assets\Scripts\keyboard\keyboard.cs" />
      <Compile Include="Assets\Scripts\title\StartScript.cs" />

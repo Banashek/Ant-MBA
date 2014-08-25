@@ -81,7 +81,7 @@ public class Dialogue_controller : MonoBehaviour {
 		//get json data
 		//chat_text = GetComponent<Chat_text>();
 		chat_node = chat_text.chat_node;
-		Debug.Log ("chat_node: " + chat_node);
+		//Debug.Log ("chat_node: " + chat_node);
 		//set text location within chat bubble
 		Camera camera = GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<Camera> ();
 		Vector3 mod_pos = transform.position;

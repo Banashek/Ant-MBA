@@ -14,6 +14,11 @@ public class Cutscene_Controller : MonoBehaviour {
 				Application.LoadLevel("Typing");
 			else if (scene==1)
 				Application.LoadLevel("hallway");
+			else if (scene==2)
+				Application.LoadLevel("hallway 2");
+			else if (scene==3)
+				Debug.Log ("Cut to credits");
+				//Application.LoadLevel("credits");
 		}
 	}
 }
