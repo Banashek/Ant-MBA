@@ -7,8 +7,19 @@ public class Top_down_ant_controller : MonoBehaviour {
 	private Animator ant_animator;
 	private Transform ant_transform;
 	private Vector3 starting_position;
+	private mirror_script mirror;
 	// Use this for initialization
+
+	void Awake(){
+		mirror = GameObject.FindGameObjectWithTag ("mirror").GetComponent<mirror_script> ();
+	}
 	void Start () {
+		if(mirror.isMirrored){
+			FlipGameObject(gameObject);
+			Vector3 v = transform.position;
+			v.x *= -1;
+			transform.position = v;
+		}
 		starting_position = transform.position;
 		ant_transform = transform;
 		ant_animator = transform.GetChild(0).GetComponent<Animator>(); //GetComponent<Animator> ();
@@ -19,6 +30,12 @@ public class Top_down_ant_controller : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Move ();
+	}
+
+	void FlipGameObject(GameObject o){
+		Vector3 scale = o.transform.localScale;
+		scale.x *= -1;
+		o.transform.localScale = scale;
 	}
 
 	private void Move(){
@@ -48,8 +65,12 @@ public class Top_down_ant_controller : MonoBehaviour {
 		if(col.gameObject.tag!="level"){
 			if(col.gameObject.tag=="end"){
 				//end level
-			}
-			transform.position = starting_position;
+				if(!mirror.isMirrored){
+					Application.LoadLevel("Printer");
+				}else
+					Debug.Log ("Load ending scene");
+			}else
+				transform.position = starting_position;
 		}
 	}
 
