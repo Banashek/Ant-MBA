@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\keyboard\Ant_Name.cs" />
      <Compile Include="Assets\Scripts\keyboard\key.cs" />
      <Compile Include="Assets\Scripts\keyboard\keyboard.cs" />
+     <Compile Include="Assets\Scripts\saw_spin.cs" />
      <Compile Include="Assets\Scripts\title\StartScript.cs" />
   </ItemGroup>
   <ItemGroup>

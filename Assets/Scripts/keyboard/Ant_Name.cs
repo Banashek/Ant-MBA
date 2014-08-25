@@ -16,6 +16,7 @@ public class Ant_Name : MonoBehaviour {
 	}
 
 	void Update(){
+		in_proper_scene = 0;
 		foreach (int scene_number in cutscenes) {
 			if(Application.loadedLevel == scene_number){
 				in_proper_scene +=1;
@@ -27,7 +28,6 @@ public class Ant_Name : MonoBehaviour {
 		}
 		if (in_proper_scene == 0){
 			show_name = false;
-			in_proper_scene=0;
 		}
 	}
 
