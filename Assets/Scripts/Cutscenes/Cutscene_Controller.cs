@@ -11,7 +11,7 @@ public class Cutscene_Controller : MonoBehaviour {
 			//transition
 			Debug.Log ("Load next scene");
 			if (scene==0)
-				Application.LoadLevel("Post Typing Cutscene");
+				Application.LoadLevel("Typing");
 			else if (scene==1)
 				Application.LoadLevel("hallway");
 		}
