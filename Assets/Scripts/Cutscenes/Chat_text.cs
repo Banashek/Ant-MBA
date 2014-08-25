@@ -103,6 +103,61 @@ public class Chat_text : MonoBehaviour {
 											"\"wait\":1," +
 											"\"say\":\"I've got to get that back!\"" +
 										"}," +
+									"]," +
+								"\"dialogue4\":" +
+									"[" +
+										"{" +
+											"\"person\":\"Illiterate Bill\"," +
+											"\"wait\":0," +
+											"\"say\":\"Where the hell is that ant?!\"" +
+										"}" +
+									"]," +
+								"\"dialogue5\":" +
+									"[" +
+										"{" +
+											"\"person\":\"Susan R. Bumpershoot\"," +
+											"\"wait\":1," +
+											"\"say\":\"Ah, there you are.\"" +
+										"}," +
+										"{" +
+											"\"person\":\"Susan R. Bumpershoot\"," +
+											"\"wait\":0," +
+											"\"say\":\"I’m very impressed with your work, Ant. You’ve gone above and beyond in your duties, and it shows.\"" +
+										"}," +
+										"{" +
+											"\"person\":\"Susan R. Bumpershoot\"," +
+											"\"wait\":0," +
+											"\"say\":\"Keep up this hustle and one day you will find your way to the tip top of this company.\"" +
+										"}," +
+										"{" +
+											"\"person\":\"Susan R. Bumpershoot\"," +
+											"\"wait\":0," +
+											"\"say\":\"You can be the long-awaited proof that ants and people can work together to create harmonious business synergy.\"" +
+										"}," +
+										"{" +
+											"\"person\":\"Susan R. Bumpershoot\"," +
+											"\"wait\":0," +
+											"\"say\":\"Think about it, ant.\"" +
+										"}," +
+										"{" +
+											"\"person\":\"Susan R. Bumpershoot\"," +
+											"\"wait\":0," +
+											"\"say\":\"Once people finally accept you and your kind into our businesses, you’ll find that you’re mere steps away from being accepted into our hearts.\"" +
+										"}," +
+										"{" +
+											"\"person\":\"Susan R. Bumpershoot\"," +
+											"\"wait\":0," +
+											"\"say\":\"I believe in you.\"" +
+										"}" +
+
+									"]," +
+								"\"dialogue6\":" +
+									"[" +
+										"{" +
+										"\"person\":\"Illiterate Bill\"," +
+										"\"wait\":1," +
+										"\"say\":\"Dude, the printer's still totally broken.\"" +
+										"}" +
 									"]" +
 								"}";
 	
@@ -111,9 +166,5 @@ public class Chat_text : MonoBehaviour {
 	void Awake () {
 		chat_node = JSON.Parse (chat_json);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 }
