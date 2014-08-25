@@ -12,6 +12,7 @@ public class Top_down_ant_controller : MonoBehaviour {
 
 	void Awake(){
 		mirror = GameObject.FindGameObjectWithTag ("mirror").GetComponent<mirror_script> ();
+		ant_animator = transform.GetChild(0).GetComponent<Animator>();
 	}
 	void Start () {
 		if(mirror.isMirrored){
@@ -22,7 +23,7 @@ public class Top_down_ant_controller : MonoBehaviour {
 		}
 		starting_position = transform.position;
 		ant_transform = transform;
-		ant_animator = transform.GetChild(0).GetComponent<Animator>(); //GetComponent<Animator> ();
+		 //GetComponent<Animator> ();
 		//ant_transform.Rotate (Vector3.forward * 90,Space.World);
 		//ant_transform.rotation = Quaternion.AngleAxis (90f, Vector3.forward);
 	}

@@ -59,6 +59,8 @@
      <Compile Include="Assets\Scripts\RingScript.cs" />
      <Compile Include="Assets\Scripts\SideScrollerController.cs" />
      <Compile Include="Assets\Scripts\SideScrollerPlayerCameraFollow.cs" />
+     <Compile Include="Assets\Scripts\keyboard\key.cs" />
+     <Compile Include="Assets\Scripts\keyboard\keyboard.cs" />
      <Compile Include="Assets\Scripts\title\StartScript.cs" />
   </ItemGroup>
   <ItemGroup>
