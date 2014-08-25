@@ -21,14 +21,8 @@ public class Switch_Backgrounds : MonoBehaviour {
 		}
 
 		if(GameObject.FindGameObjectsWithTag("dialogue").Length==0){
-			show_credits = true;
+			Application.LoadLevel("credits");
 		}
 	}
-
-	void OnGUI(){
-		if(show_credits){
-			Debug.Log("Show credits");
-			GUI.Label(new Rect(Screen.width/2-150,Screen.height/2-150,350,350),"Thanks for playing!",style);
-		}
-	}
+	
 }

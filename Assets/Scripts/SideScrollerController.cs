@@ -6,7 +6,7 @@ public class SideScrollerController : MonoBehaviour {
 	public float maxSpeed = 10f;
 	bool facingRight = true;
 	Animator anim;
-	
+	private AudioSource deathSound;
 	bool grounded = false;
 	public Transform groundCheck;
 	float groundRadius = 0.2f;
@@ -19,13 +19,10 @@ public class SideScrollerController : MonoBehaviour {
 	
 	void Awake()
 	{
-	}
-	
-	// Use this for initialization
-	void Start () 
-	{
 		anim = GetComponent<Animator> ();
+		deathSound = GetComponent<AudioSource> ();
 	}
+
 	
 	// Update is called once per frame
 	void FixedUpdate () 
@@ -77,6 +74,7 @@ public class SideScrollerController : MonoBehaviour {
 	
 	void Dead()
 	{
+		deathSound.Play ();
 		gameObject.transform.position = playerResetPoint;
 		//Application.LoadLevel (0);
 	}

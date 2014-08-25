@@ -7,11 +7,13 @@ public class Dialogue_controller : MonoBehaviour {
 	public int dialogue_number = 1;
 	public string character_name;
 	public GUIStyle style;
+
 	private Chat_text chat_text;
 	private JSONNode chat_node;
 	private float total_time = 0f;
 	private bool startDialogue = true;
 	private SpriteRenderer r;
+	private AudioSource sound;
 	private bool nextLetter;
 	private Rect text_rect;
 	private string person_name,string_to_display;
@@ -52,6 +54,7 @@ public class Dialogue_controller : MonoBehaviour {
 					Wrap_Text();
 				}
 				//create typing effect
+				sound.Play();
 				yield return new WaitForSeconds(.1f);
 			}
 			statements_spoken+=1;
@@ -75,6 +78,7 @@ public class Dialogue_controller : MonoBehaviour {
 	void Awake(){
 		chat_text = GetComponent<Chat_text>();
 		r = GetComponent<SpriteRenderer> ();
+		sound = GetComponent<AudioSource> ();
 	}
 
 	void Start () {

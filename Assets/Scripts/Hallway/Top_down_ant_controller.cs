@@ -8,11 +8,13 @@ public class Top_down_ant_controller : MonoBehaviour {
 	private Transform ant_transform;
 	private Vector3 starting_position;
 	private mirror_script mirror;
+	private AudioSource deathSound;
 	// Use this for initialization
 
 	void Awake(){
 		mirror = GameObject.FindGameObjectWithTag ("mirror").GetComponent<mirror_script> ();
 		ant_animator = transform.GetChild(0).GetComponent<Animator>();
+		deathSound = GetComponent<AudioSource> ();
 	}
 	void Start () {
 		if(mirror.isMirrored){
@@ -71,8 +73,10 @@ public class Top_down_ant_controller : MonoBehaviour {
 					Application.LoadLevel("Behold_Printer");
 				}else
 					Application.LoadLevel("closing");
-			}else
+			}else{
+				deathSound.Play ();
 				transform.position = starting_position;
+			}
 		}
 	}
 

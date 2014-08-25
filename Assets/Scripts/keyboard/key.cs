@@ -6,12 +6,15 @@ public class key : MonoBehaviour {
 	public Sprite key_up,key_down;
 	public string value;
 
+	private AudioSource keyupsound, keydownsound;
 	private float time_on_key = 0f;
 	private keyboard kb;
 	// Use this for initialization
 	void Awake () {
 		GetComponent<SpriteRenderer> ().sprite = key_up;
 		kb = GameObject.FindGameObjectWithTag ("keyboard").GetComponent<keyboard> ();
+		keyupsound = GameObject.Find ("keyupsound").GetComponent<AudioSource> ();
+		keydownsound = GameObject.Find ("keydownsound").GetComponent<AudioSource> ();
 	}
 	
 	void OnTriggerEnter2D(){
@@ -21,6 +24,7 @@ public class key : MonoBehaviour {
 			kb.name = kb.name.Substring(0,kb.name.Length-1)+value+"_";
 			kb.keys_entered += 1;
 		}
+		keydownsound.Play ();
 	}
 
 	void OnTriggerStay2D(){
@@ -37,5 +41,6 @@ public class key : MonoBehaviour {
 		if (value.Equals ("ENTER"))
 			Application.LoadLevel("Post Typing Cutscene");
 		time_on_key = 0f;
+		keyupsound.Play ();
 	}
 }
