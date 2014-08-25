@@ -77,7 +77,7 @@ public class Chat_text : MonoBehaviour {
 										"}," +
 										"{" +
 											"\"person\":\"Ant\"," +
-											"\"wait\":7," +
+											"\"wait\":5," +
 											"\"say\":\"Okay, I will. Thank you very much Susan. I'm happy to be here, and I promise not to let anyone down.\"" +
 										"}," +
 										"{" +

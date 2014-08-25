@@ -66,7 +66,7 @@ public class Top_down_ant_controller : MonoBehaviour {
 			if(col.gameObject.tag=="end"){
 				//end level
 				if(!mirror.isMirrored){
-					Application.LoadLevel("Printer");
+					Application.LoadLevel("Behold_Printer");
 				}else
 					Debug.Log ("Load ending scene");
 			}else
