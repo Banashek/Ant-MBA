@@ -7,10 +7,15 @@ You play as an ant who's trying to make his way through the cut-throat corporate
 Find out how hard it is to create synergy when you're just a tiny insect.
 
 Playable at:
+
 http://madebyjake.co/games/Ant_MBA.html
+
 http://soggychips.itch.io/ant-mba
 
 Created by:
+
 Jake Cohen (github.com/soggychips)
+
 Jon Banashek (github.com/banashek)
+
 Evan Sullivan (github.com/darkfox3889)
