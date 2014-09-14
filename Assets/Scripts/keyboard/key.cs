@@ -25,6 +25,8 @@ public class key : MonoBehaviour {
 			kb.keys_entered += 1;
 		}
 		keydownsound.Play ();
+		if (value.Equals ("ENTER"))
+			Application.LoadLevel("Post Typing Cutscene");
 	}
 
 	void OnTriggerStay2D(){

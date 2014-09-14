@@ -14,7 +14,7 @@ public class Chat_text : MonoBehaviour {
 										"}," +
 										"{" +
 											"\"person\":\"Illiterate Bill\"," +
-											"\"wait\":3," +
+											"\"wait\":1," +
 											"\"say\":\"Seriously?\"" +
 										"}," +
 										"{" +
@@ -27,7 +27,7 @@ public class Chat_text : MonoBehaviour {
 									"[" +
 										"{" +
 											"\"person\":\"Illiterate Bill\"," +
-											"\"wait\":3," +
+											"\"wait\":2," +
 											"\"say\":\"What did he type?\"" +
 										"}," +
 										"{" +
@@ -42,7 +42,7 @@ public class Chat_text : MonoBehaviour {
 										"}," +
 										"{" +
 											"\"person\":\"Susan R. Bumpershoot\"," +
-											"\"wait\":3," +
+											"\"wait\":1," +
 											"\"say\":\"Very well. Let’s begin our discussion of business.\"" +
 										"}," +
 										"{" +
@@ -57,7 +57,7 @@ public class Chat_text : MonoBehaviour {
 										"}," +
 										"{" +
 											"\"person\":\"Susan R. Bumpershoot\"," +
-											"\"wait\":3," +
+											"\"wait\":1," +
 											"\"say\":\"That's enough, Bill.\"" +
 										"}," +
 										"{" +
@@ -77,7 +77,7 @@ public class Chat_text : MonoBehaviour {
 										"}," +
 										"{" +
 											"\"person\":\"Ant\"," +
-											"\"wait\":5," +
+											"\"wait\":1," +
 											"\"say\":\"Okay, I will. Thank you very much Susan. I'm happy to be here, and I promise not to let anyone down.\"" +
 										"}," +
 										"{" +

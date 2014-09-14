@@ -4,9 +4,10 @@ using System.Collections.Generic;
 
 public class Cutscene_Controller : MonoBehaviour {
 	public int scene;
+	private GameObject[] dialogues;
 	// Update is called once per frame
 	void Update () {
-		GameObject[] dialogues = GameObject.FindGameObjectsWithTag("dialogue");
+		dialogues = GameObject.FindGameObjectsWithTag("dialogue");
 		if(dialogues.Length==0){
 			//transition
 			Debug.Log ("Load next scene");
