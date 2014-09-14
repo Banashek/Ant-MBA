@@ -7,6 +7,7 @@ public class Dialogue_controller : MonoBehaviour {
 	public int dialogue_number = 1;
 	public string character_name;
 	public GUIStyle style;
+	public float seconds_between_letters = .1f;
 
 	private Chat_text chat_text;
 	private JSONNode chat_node;
@@ -36,7 +37,7 @@ public class Dialogue_controller : MonoBehaviour {
 			string json_char_name = (string)dialogue[statements_spoken]["person"];
 			string text_to_say = dialogue[statements_spoken]["say"];
 			if(!json_char_name.Equals(character_name)){
-				yield return new WaitForSeconds(times[statements_spoken]+(.05f*(json_char_name.Length+2)+.1f*(text_to_say.Length-1)));
+				yield return new WaitForSeconds(times[statements_spoken]+(.05f*(json_char_name.Length+2)+seconds_between_letters*(text_to_say.Length-1)));
 				statements_spoken+=1;
 				continue;
 			}
@@ -55,7 +56,7 @@ public class Dialogue_controller : MonoBehaviour {
 				}
 				//create typing effect
 				sound.Play();
-				yield return new WaitForSeconds(.1f);
+				yield return new WaitForSeconds(seconds_between_letters);
 			}
 			statements_spoken+=1;
 			yield return new WaitForSeconds(1f);
